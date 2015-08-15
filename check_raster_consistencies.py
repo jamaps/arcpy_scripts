@@ -7,6 +7,7 @@
 # the purpose of this script is to check these consistencies between rasters before building a mosaic dataset
 # if they are not consistent, then extra steps will be necessary before creating a mosaic dataset
 
+# script last updated by Jeff Allen on August 14, 2015
 
 
 import arcpy
@@ -43,7 +44,5 @@ for raster in list_of_rasters:
 print "Number of rasters checked: %d" %dataset_count
 print "Do all rasters have the same number of bands? %s" %bands_answer
 print "Do all rasters have the same spatial reference? %s" %ref_answer
-
-# script updated by Jeff Allen on August 14, 2015
 
 
