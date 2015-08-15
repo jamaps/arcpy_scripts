@@ -1,4 +1,13 @@
-# checking raster consistencies before building mosaic datasets
+# checking raster consistencies
+
+# this script loops through a group of rasters in a directory
+# it prints their spatial reference system and number of bands
+# it then prints whether all the rasters have the same number of bands and spatial reference system
+
+# the purpose of this script is to check these consistencies between rasters before building a mosaic dataset
+# if they are not consistent, then extra steps will be necessary before creating a mosaic dataset
+
+
 
 import arcpy
 
