@@ -15,7 +15,7 @@ import arcpy
 arcpy.env.workspace = PATH HERE
 list_of_rasters = arcpy.ListDatasets()
 
-desc = arcpy.Describe(list_of_datasets[0])
+desc = arcpy.Describe(list_of_rasters[0])
 og_num_bands = desc.bandCount
 og_spatial_ref = (desc.spatialReference).name
 
