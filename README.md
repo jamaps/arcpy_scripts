@@ -1,2 +1,3 @@
-## arcpy_scripts
-a place to build a small collection of python scripts for arcgis
+### arcpy_scripts
+
+a small collection of my python scripts for arcgis
