@@ -13,7 +13,7 @@
 
 import arcpy
 
-arcpy.env.workspace = r"\\192-86\DFSRoot\Data\allenj\Desktop\test"
+arcpy.env.workspace = r"\\PATH"
 list_of_rasters = arcpy.ListDatasets()
 desc = arcpy.Describe(list_of_rasters[0])
 og_num_bands = desc.bandCount
