@@ -1,3 +1,5 @@
+# batch exports feature classes from a directory (including gdb's) to an output foler
+
 import arcpy
 from arcpy import env
 
