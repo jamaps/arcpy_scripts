@@ -3,12 +3,10 @@ import os
 import time
 import csv
 
-
 begin_time = time.clock()
 
-arcpy.env.workspace = ws = r"\\192-86\DFSRoot\Data\allenj\Desktop\gdb\test.gdb"
-mrcsv = r"\\192-86\DFSRoot\Data\allenj\Desktop\gdb\write.csv"
-
+arcpy.env.workspace = ws = r"GDP PATH"
+mrcsv = r"CSV PATH"
 
 ls = [1,2,3]
 writer = csv.writer(open(mrcsv, 'a'))
