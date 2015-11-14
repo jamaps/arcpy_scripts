@@ -1,3 +1,5 @@
+# still a work in progress 11-2015
+
 import arcpy
 import os
 import time
