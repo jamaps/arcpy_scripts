@@ -1,4 +1,4 @@
-# still a work in progress 11-2015
+# still a work in progress 17-11-2015
 
 import arcpy
 import os
@@ -18,10 +18,14 @@ c = 0
 for fds in arcpy.ListDatasets('','feature') + ['']:
         for fc in arcpy.ListFeatureClasses('','',fds):
         	print fc
-                x = fc
-                y = arcpy.GetCount_management(fc)
-                z = "meow"
-                row = [(x),(y),(z)]
+                c = arcpy.GetCount_management(fc)
+                desc = arcpy.Describe(fc)
+                extent = desc.extent
+                ymax = extent.YMax
+                ymin = extent.YMin
+                xmax = extent.XMax
+                xmin = extent.XMin
+                row = [(fc),(c),(xmin),(xmax),(ymax),(ymin)]
                 writer.writerow(row)
 		c = c + 1
 
