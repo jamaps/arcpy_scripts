@@ -18,4 +18,4 @@ loops through a group of feature classes and calculates basic stats about the nu
 
 ##### feature class info to csv
 outputs information like feature counts and spatial reference of a group of feature classes into a csv table
-(still working on this)
+
