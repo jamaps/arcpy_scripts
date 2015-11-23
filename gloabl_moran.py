@@ -1,5 +1,17 @@
-import arcpy
-arcpy.env.workspace = r"C:\Users\allenje4\Desktop\GGRC32 Lab 4 Files\GGRC32 Lab 4 Files\Local Statistics Data"
-m = 
-arcpy.SpatialAutocorrelation_stats("pop_sci.shp", "PDens2011","NO_REPORT", "CONTIGUITY_EDGES_CORNERS", "#",)
+#still working
 
+import arcpy
+
+arcpy.env.workspace = ws = r"PATH"
+
+shp = "pop_sci.shp"
+
+fieldList = arcpy.ListFields(shp)
+
+for field in fieldList:
+  print field.name
+
+m = arcpy.SpatialAutocorrelation_stats(shp, "PDens2011","NO_REPORT", "CONTIGUITY_EDGES_CORNERS", "#",)
+print m[0]
+print m[1]
+print m[2]
