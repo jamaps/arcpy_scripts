@@ -4,7 +4,7 @@ import time
 
 begin_time = time.clock()
 
-arcpy.env.workspace = ws = r"C:\Users\allenje4\Desktop\Desc_stats"
+arcpy.env.workspace = ws = r"PATH"
 
 shp = "data_desc_points.shp"
 
