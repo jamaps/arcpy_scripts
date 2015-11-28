@@ -13,7 +13,8 @@ out_folder_SD = r"PATH"
 
 fieldList = arcpy.ListFields(shp)
 
-# output 
+
+# output MCs and SDs
 
 count = 0
 for field in fieldList:
