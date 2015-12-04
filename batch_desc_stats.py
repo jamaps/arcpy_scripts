@@ -1,3 +1,5 @@
+# calculates weighted MC and SD for fields in a shp
+
 import arcpy
 import os
 import time
@@ -34,7 +36,7 @@ print count
 
 
 
-# code MC with years and mode
+# additional steps for coding in info to outputs and then merging into single shps for MC and SD
 
 arcpy.env.workspace = out_folder_MC
   
