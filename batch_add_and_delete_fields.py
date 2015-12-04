@@ -1,3 +1,5 @@
+# ex script for adding/deleting the same fields to multiple shps in a folder
+
 import arcpy
 
 arcpy.env.workspace = ws = r"PATH"
