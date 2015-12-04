@@ -1,4 +1,4 @@
-# still a work in progress 17-11-2015
+# outputs feature class info to a csv tabl
 
 import arcpy
 import os
