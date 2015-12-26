@@ -1,5 +1,6 @@
 # script which loops through folder of shps, checks geometry, dissolves each to one feature, and merges the dissolved into one shp
 # built for creating a shp of census metropolitan areas from single files of census tracts for each urban area
+# can also add dissolve fields to dissolve to and dissolve stats - check arcpy documentation for this
 
 import arcpy
 import os
