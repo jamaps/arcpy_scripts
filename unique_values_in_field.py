@@ -6,7 +6,7 @@
 import arcpy
 
 # set path to working folder
-arcpy.env.workspace = r"D:\Census\71_ct_nad83"
+arcpy.env.workspace = r"PATH"
 
 print "------------------------------"
 
