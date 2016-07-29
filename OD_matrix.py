@@ -19,7 +19,7 @@ origins = r"E:\jeff\RealTime\temp.gdb\Origin1"
 destinations = r"E:\Jeff\tor\points_for_street_dest_1.shp"
 out_folder = r"E:\Jeff\tor"
 # time to run the calc at
-what_time = datetime.datetime(2016,5,25,5,0,0) # March 29, 2016
+what_time = datetime.datetime(2016,5,25,5,0,0) # May 25, 2016
 
 #Create OD Matrix for the time that is next in the time step
 arcpy.MakeODCostMatrixLayer_na(network, 'OD Cost Matrix', 'TravelTime_WithTransit', 99999, '#', '#', 'ALLOW_UTURNS', '#', 'NO_HIERARCHY', '#', 'STRAIGHT_LINES', what_time)
