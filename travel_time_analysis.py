@@ -15,7 +15,7 @@ env.workspace = r"PATH.gdb"
 env.overwriteOutput = True
 arcpy.CheckOutExtension("Network")
 network = r"PATH.gdb\network\network_ND"
-ODpair = r"E:\jeff\RealTime\temp.gdb\OD1" #start and end point to analyze
+ODpair = r"PATH\OD1" #start and end point to analyze
 
 # evaluator
 eval = "TravelTime_WithTransit"
@@ -80,7 +80,7 @@ for times in time_ints:
 print output_array
 
 # write to a csv
-with open('out_realtime.csv', 'wb') as f:
+with open('out.csv', 'wb') as f:
     writer = csv.writer(f)
     for rowr in output_array:
         writer.writerows([rowr])
